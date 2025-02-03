@@ -27,7 +27,7 @@
               <div class="container">
                 <a class="navbar-brand"
                    href="{% url 'home.index' %}">
-                  <img src="{% static 'img/logo.png' %}" alt="logo"
+                  <img src="{% static 'img/logo.jpg' %}" alt="logo"
                        height="40" />
                 </a>
                 <button class="navbar-toggler" type="button"
@@ -41,6 +41,8 @@
                 <div class="collapse navbar-collapse"
                      id="navbarNavAltMarkup">
                   <div class="navbar-nav ms-auto navbar-ml">
+                    <a class="nav-link"
+                       href="{% url 'movies.index' %}">Movies</a>
                     <a class="nav-link"
                        href="{% url 'home.about' %}">About</a>
                   </div>
@@ -72,6 +74,10 @@
                    mx-auto mb-4">
                 <b>LINKS</b>
                 <hr />
+                <p><a class="nav-link"
+                  href="{% url 'movies.index' %}">
+                  Movies
+                </a></p>
                 <p><a class="nav-link"
                   href="{% url 'home.about' %}">
                   About
