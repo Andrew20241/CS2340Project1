@@ -27,7 +27,7 @@ def index(request):
     template_data = {}
     template_data['title'] = 'Movies'
     #template_data['movies'] = movies #using dummy data defined above
-    template_data['movies'] = Movie.objects.all() #getting data from the database
+    template_data['movies'] = movies #getting data from the database
     return render(request, 'movies/index.html',
                   {'template_data': template_data})
 
