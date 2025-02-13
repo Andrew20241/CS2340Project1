@@ -34,6 +34,9 @@ CSRF_TRUSTED_ORIGINS = [
 
 ALLOWED_HOSTS = [
     '.herokuapp.com',
+    'localhost',
+    '0.0.0.0',
+    '127.0.0.1'
 ]
 
 CORS_ORIGIN_WHITELIST = [
@@ -41,6 +44,9 @@ CORS_ORIGIN_WHITELIST = [
     "https://localhost",
     "http://localhost",
 ]
+
+MEDIA_URL = 'media/'
+MEDIA_ROOT = BASE_DIR / 'media/'
 
 # Application definition
 
