@@ -26,8 +26,27 @@ SECRET_KEY = 'django-insecure-k!p=%v)d4_!6bc3ou1bdwkv#fbggxf$ev79w#6!8x2)1_z$9=-
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+CSRF_TRUSTED_ORIGINS = [
+    'https://cs2340-gtmovies-1cd7e7abd44d.herokuapp.com',
+    "https://localhost",
+    "http://localhost",
+]
 
+ALLOWED_HOSTS = [
+    '.herokuapp.com',
+    'localhost',
+    '0.0.0.0',
+    '127.0.0.1'
+]
+
+CORS_ORIGIN_WHITELIST = [
+    'https://cs2340-gtmovies-1cd7e7abd44d.herokuapp.com',
+    "https://localhost",
+    "http://localhost",
+]
+
+MEDIA_URL = 'media/'
+MEDIA_ROOT = BASE_DIR / 'media/'
 
 # Application definition
 
@@ -119,6 +138,7 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
+STATIC_ROOT = BASE_DIR / 'staticfiles/'
 
 STATIC_URL = 'static/'
 
