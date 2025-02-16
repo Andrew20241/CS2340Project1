@@ -37,10 +37,11 @@ body{
   color: #fff;
 }
 .img-card-200 {
-  width: fit-content;
-  max-height: 200px;
+  width: 135px;
+  height: auto;
 }
+
 .img-card-400 {
-  width: fit-content;
+  width: 270px;
   max-height: 400px;
 }
